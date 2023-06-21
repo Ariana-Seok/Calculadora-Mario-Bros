@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap');
+/* Podemos incluir el metodo root*/
+*{
+    font-family: 'Delius Unicase', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../img/pattern-logos-characters-bd1f26898b2027c98ce8ba17c084f523.png),linear-gradient(180deg,#eee1d4 16%,#c09f7d 76%);
+    background-attachment: fixed;
+}
+
+.seccion_calculadora{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.calculadora {
+    margin: 50px;
+    padding: 1px;
+    background-image:url(../img/new.png);
+    background-repeat:no-repeat;
+    background-size: 450px 630px;
+    border-bottom: 2px solid rgb(59, 3, 3);
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(1, 91, 96);
+}
+
+.pantalla {
+    margin-top: 30px;
+    width: 400px;
+    min-height: 200px;
+    background: linear-gradient(#e7fafa, #06d0fd);
+    border-radius: 30px;
+    word-wrap: break-word;
+}
+
+p {
+    display: block;
+    text-align: start;
+    justify-content: end;
+    margin: 4px;
+    padding: 4px;
+    font-size: 50px;
+}
+
+
+.botones {
+    padding: 1px;
+    width: 26rem;
+    height: 21rem;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+}
+
+.filas{
+    width: 18rem;
+    height: 21rem;
+    border-radius: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.columna{
+    width: 7rem;
+    height: 21rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.fila1 , .fila2 , .fila3 , .fila4{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 4px;
+    align-items: center;
+    height: 3rem;
+    width: 100%;
+}
+
+.boton_estilo1 {
+    padding-top: 17.6px;
+    padding-right: 27.2px;
+    padding-left: 27.2px;
+    padding-bottom: 17.6px;
+    border: solid 1px transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    /*transition: all 0.1s ease;*/
+    background: linear-gradient(#FF8A00, #DCFF04);
+    font-size: 34px;
+}
+
+.btn_hongo{
+    /*background-color: aqua;*/
+    width: 5rem;
+    height: 4.6rem;
+    border-radius: 50px;
+}
+
+.boton_honguito{
+    padding: 36px;
+    background-color: transparent;
+    border: solid 1px transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    /*transition: all 0.1s ease;*/
+    background-image:url(../img/hongo-mario-bros-png.png);
+    background-repeat:no-repeat;
+    background-size: 80px 75.2px;
+    background-position:center;
+}
+
+.btn_operadores{
+    /*background-color: #DCFF04;*/
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton_estilo2 {
+    margin: 2px;
+    padding-top: 11.2px;
+    padding-right: 36.8px;
+    padding-left: 36.8px;
+    padding-bottom: 11.2px;
+    border: solid 1px transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    /*transition: all 0.1s ease;*/
+    background: linear-gradient(#ffffff,#ffffff, #bebebe);
+    font-size: 30px;
+}
+
+.boton_estilo3{
+    padding-top: 17.6px;
+    padding-right: 27.2px;
+    padding-left: 27.2px;
+    padding-bottom: 17.6px;
+    border: solid 1px transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    /*transition: all 0.1s ease;*/
+    background: linear-gradient(#ffffff,#ffffff, #bebebe);
+    font-size: 35px;
+    font-family: 'Delius Unicase', cursive;
+}
+
+.boton_estilo1:hover{
+    background: linear-gradient(#FF8A00, #DCFF04);
+    color: rgb(148, 0, 0);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(87, 42, 0);
+}
+
+.boton_estilo2:hover{
+    color: rgb(148, 0, 0);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.boton_estilo3:hover{
+    color: rgb(148, 0, 0);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+}
+
+.boton_honguito:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(121, 0, 0);
+}

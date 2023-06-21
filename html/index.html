@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Equipo 6</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="seccion_calculadora">
+        <div class="calculadora">
+            <div class="pantalla">
+                <div class="resultado">
+                    <p class="result"></p>
+                </div>
+        
+            </div>
+                <div class="botones">
+                    <div class="filas">
+                        <div class="fila1">
+                            <button class="boton_estilo1" onclick="cargarNumero('7')">7</button>
+                            <button class="boton_estilo1" onclick="cargarNumero('8')">8</button>
+                            <button class="boton_estilo1" onclick="cargarNumero('9')">9</button>
+                        </div>
+                        <div class="fila2">
+                            <button class="boton_estilo1" onclick="cargarNumero('4')">4</button>
+                            <button class="boton_estilo1" onclick="cargarNumero('5')">5</button>
+                            <button class="boton_estilo1" onclick="cargarNumero('6')">6</button>
+                        </div>
+                        <div class="fila3">
+                            <button class="boton_estilo1" onclick="cargarNumero('1')">1</button>
+                            <button class="boton_estilo1" onclick="cargarNumero('2')">2</button>
+                            <button class="boton_estilo1" onclick="cargarNumero('3')">3</button>
+                        </div>
+                        <div class="fila4">
+                            <button class="boton_estilo3" onclick="cargarNumero('0')">0</button>
+                            <button class="boton_estilo3" onclick="cargarDecimal()">.</button>
+                            <button class="boton_estilo3" onclick="calcularResultado()">=</button>
+                        </div>
+    
+                    </div>
+                    <div class="columna">
+                        <div class="btn_hongo">
+                            <button class="boton_honguito" onclick="limpiarPantalla()"></button>
+                        </div>
+                        <div class="btn_operadores">
+                            <button class="boton_estilo2" onclick="cargarOperador('/')">/</button>
+                            <button class="boton_estilo2" onclick="cargarOperador('-')">-</button>
+                            <button class="boton_estilo2" onclick="cargarOperador('+')">+</button>
+                            <button class="boton_estilo2" onclick="cargarOperador('*')">*</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
