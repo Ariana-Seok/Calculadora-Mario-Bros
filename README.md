@@ -10,7 +10,7 @@ Calculadora simple inspirada en el mundo de Mario Bros. ¡Realiza cálculos de u
 
 ## Cómo Usar
 
-1. Visita el [sitio web de la calculadora](https://ariana-seok.github.io/calculadora.github.io/) o clona el repositorio y abre el archivo `index.html`.
+1. Visita el [sitio web de la calculadora](https://ariana-seok.github.io/Calculadora-Mario-Bros/) o clona el repositorio y abre el archivo `index.html`.
 2. ¡Ingresa los valores y disfruta de la magia de Mario en tus cálculos!
 
 ## Implementado con
