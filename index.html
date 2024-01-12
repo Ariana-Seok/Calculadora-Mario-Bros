@@ -9,52 +9,36 @@
     <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
-    <div class="seccion_calculadora">
+    <header>
+        <h1 class="titulo_principal">Calculadora Mario Bros</h1>
+    </header>
+    <main class="contenedor_calculadora">
         <div class="calculadora">
-            <div class="pantalla">
-                <div class="resultado">
-                    <p class="result"></p>
-                </div>
-        
+            <div class="calculadora__pantalla">
+                <p class="result">Hola!</p>
             </div>
-                <div class="botones">
-                    <div class="filas">
-                        <div class="fila1">
-                            <button class="boton_estilo1" onclick="cargarNumero('7')">7</button>
-                            <button class="boton_estilo1" onclick="cargarNumero('8')">8</button>
-                            <button class="boton_estilo1" onclick="cargarNumero('9')">9</button>
-                        </div>
-                        <div class="fila2">
-                            <button class="boton_estilo1" onclick="cargarNumero('4')">4</button>
-                            <button class="boton_estilo1" onclick="cargarNumero('5')">5</button>
-                            <button class="boton_estilo1" onclick="cargarNumero('6')">6</button>
-                        </div>
-                        <div class="fila3">
-                            <button class="boton_estilo1" onclick="cargarNumero('1')">1</button>
-                            <button class="boton_estilo1" onclick="cargarNumero('2')">2</button>
-                            <button class="boton_estilo1" onclick="cargarNumero('3')">3</button>
-                        </div>
-                        <div class="fila4">
-                            <button class="boton_estilo3" onclick="cargarNumero('0')">0</button>
-                            <button class="boton_estilo3" onclick="cargarDecimal()">.</button>
-                            <button class="boton_estilo3" onclick="calcularResultado()">=</button>
-                        </div>
-    
-                    </div>
-                    <div class="columna">
-                        <div class="btn_hongo">
-                            <button class="boton_honguito" onclick="limpiarPantalla()"></button>
-                        </div>
-                        <div class="btn_operadores">
-                            <button class="boton_estilo2" onclick="cargarOperador('/')">/</button>
-                            <button class="boton_estilo2" onclick="cargarOperador('-')">-</button>
-                            <button class="boton_estilo2" onclick="cargarOperador('+')">+</button>
-                            <button class="boton_estilo2" onclick="cargarOperador('*')">*</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="calculadora__botones">
+                <div class="btn btn_coma btn_blanco" onclick="cargarNumero('.')">.</div>
+                <div class="btn btn_limpiar" onclick="limpiarPantalla()"></div>
+                <div class="btn btn_resultado btn_blanco" onclick="calcularResultado()">=</div>
+                <div class="btn btn_multiplicacion btn_blanco" onclick="cargarOperador('*')">*</div>
+                <div class="btn btn_division btn_blanco" onclick="cargarOperador('/')">/</div>
+                <div class="btn btn_resta btn_blanco" onclick="cargarOperador('-')">-</div>
+                <div class="btn btn_suma btn_blanco" onclick="cargarOperador('+')">+</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('1')">1</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('2')">2</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('3')">3</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('4')">4</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('5')">5</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('6')">6</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('7')">7</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('8')">8</div>
+                <div class="btn btn_numero btn_degradado" onclick="cargarNumero('9')">9</div>
+                <div class="btn btn_numero btn_blanco" onclick="cargarNumero('0')">0</div>
+                <div class="btn btn_numero btn_blanco" onclick="cargarNumero('00')">00</div>
+            </div>
         </div>
-    </div>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
